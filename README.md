@@ -24,7 +24,9 @@ This tutorial outlines the implementation of on-premises Active Directory within
 - step 1.5 - Set the VM that is running Windows server to have a static Private IP Address 
 - Step 2 - ensure proper communcations between both VMs (Ping from Windows 10 to Windows Server) 
 - Step 3 - Open Windows Server's firewall to all ICMPv4 echo request (WF.MSC)  (Imbound Rules/filter by Protocol/Icmpv4)(Core Networking Diagnostics - ICMP Echo Request- There are two of the one has a private profile and the other has a domain profile 
-- Step 4 - Go to Server manager( 
+- Step 4 - Go to Server manager, Add Roles and Features and check Active Directory Domain Services, Add new Forest when making the Domain name. Reconnect when done be cautious sometimes the I.P changed from this.
+- step 5 - from now on log on with the website name and the user name (websitename.com\username)
+- step 6 - go to active directory users and computers( this can be typed into the search bar as well into the tool bar 
 
 <h2>Deployment and Configuration Steps</h2>
 
