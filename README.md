@@ -23,8 +23,8 @@ This tutorial outlines the implementation of on-premises Active Directory within
 - Step 1 Create Two Vitural Machines making sure that they are both in the same V-Net, One will be running Windows Server the other Windows 10
 - step 1.5 - Set the VM that is running Windows server to have a static Private IP Address 
 - Step 2 - ensure proper communcations between both VMs (Ping from Windows 10 to Windows Server) 
-- Step 3 - Open Windows Server's firewall to all ICMPv4 echo request (WF.MSC)  (Imbound Rules/filter by Protocol/Icmpv4)(Rule 1-Core Networking Diagnostics - ICMP Echo Request Rules 2 - Core Networking Diagnostics - ICMP Echo Request 
-- Step 4 - 
+- Step 3 - Open Windows Server's firewall to all ICMPv4 echo request (WF.MSC)  (Imbound Rules/filter by Protocol/Icmpv4)(Core Networking Diagnostics - ICMP Echo Request- There are two of the one has a private profile and the other has a domain profile 
+- Step 4 - Go to Server manager( 
 
 <h2>Deployment and Configuration Steps</h2>
 
