@@ -33,8 +33,19 @@ This tutorial outlines the implementation of on-premises Active Directory within
 - Step 8.5 - Right click the name, click properties - then memeber of - add type in domain admin check the name, then click okay, apply and okay.
 - Step 9 - Log off and re sign in as your admin position.
 - Step 10 - Find out the Pritvate I.P Address for the the VM running the Windows Server
-- Step 11 - Now we need to change the DNS settings on the VM running Windows 10 on Azure, click on the Windows 10 VM, then Network Settings, then right under Network interface/ IP configuration - click on client-1241_z1 (primary)/ IPconfig (primary) <img width="1440" alt="Screen Shot 2023-10-31 at 9 43 48 PM" src="https://github.com/Danial-Dawood/Active-Directory-with-Azure-Virtual-Machines-/assets/149525309/f6d41fed-b760-48b6-9613-9ad3b7e9a5fd">
+- Step 11 - Now we need to change the DNS settings on the VM running Windows 10 on Azure, click on the Windows 10 VM, then Network Settings, then right under Network interface/ IP configuration - click on client-1241_z1 (primary)/ IPconfig (primary) <img width="1440" alt="Screen Shot 2023-10-31 at 9 43 48 PM" src="https://github.com/Danial-Dawood/Active-    
+  Directory-with-Azure-Virtual-Machines-/assets/149525309/f6d41fed-b760-48b6-9613-9ad3b7e9a5fd">
 - Step 11.5 - Once you click there it will allow you to click on DNS setting where under DNS Servers you can change it from inherit from vitural network to custom. Then type in the Windows Servers Private IP.
+- Step 12 - Go into the VM Running Windows 10, right click the start button at the bottom right, go to system and click on Rename this PC. Under the computer name tab the most bottom     option says to chnage this computer name or change it domain you will click on change.
+- Step 13 - Under Member of change it from work group to domain then enter the name of the website.
+- Step 14 - After entering this in it will prompt you to log in, log in with the admin account you have made on the Windows Server VM
+- Step 15 - After doing so it will Restart the VM and then when you log in again log in with the same VM (both VM will be logged in witht the same admin account at this point even 
+  though the admin was never made on this computer this is done by the domain being switched to the Windows Server domain. Simair to how in school you can log into any computer with 
+  your credentials you dont have to make a account on every computer.)
+- Step 16 - Now we need to make it so that anyone not just a admin can log into the windows VM. Rigth click the start button, then go to system then go to remote decktop. At the bottom   under User accounts click (select users that can remotely access is PC)
+- Step 17 - Next click Add and and type in domain users and click check names it should unline it and caps the first letters of each word. Then click okay(x2) and this will maake it so   any domain user can log on to this computer (not just a admin)
+- Step 18 - Now go to the Windows Server VM, open up PowerShell as a Admin (so you much be logged into the windows server vm with the admin user we had created.) Open a new Script and put in https://github.com/joshmadakor1/AD_PS/blob/master/Generate-Names-Create-Users.ps1 this scprit for making users 
+- 
 
 <h2>Deployment and Configuration Steps</h2>
 
