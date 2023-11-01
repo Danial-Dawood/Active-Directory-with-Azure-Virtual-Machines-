@@ -24,11 +24,12 @@ This tutorial outlines the implementation of on-premises Active Directory within
 - Step 1.5 - Set the VM that is running Windows server to have a static Private IP Address. 
 - Step 2 - Ensure proper communcations between both VMs (Ping from Windows 10 to Windows Server.) 
 - Step 3 - Open Windows Server's firewall to all ICMPv4 echo request (WF.MSC)  (Imbound Rules/filter by Protocol/Icmpv4)(Core Networking Diagnostics - ICMP Echo Request- There are two 
-  of the one has a private profile and the other has a domain profile. 
-- Step 4 - Go to Server manager, Add Roles and Features and check Active Directory Domain Services, Add new Forest when making the Domain name. Reconnect when done be cautious sometimes the I.P changed from this.
+  of the one has a private profile and the other has a domain profile. <img width="1440" alt="Screen Shot 2023-11-01 at 5 16 01 PM" src="https://github.com/Danial-Dawood/Active-Directory-with-Azure-Virtual-Machines-/assets/149525309/dd9a1e64-b41e-4a7c-b16f-43f7e1643f36">
+- Step 4 - Go to Server manager, Add Roles and Features and check Active Directory Domain Services, Add new Forest when making the Domain name. Reconnect when done be cautious sometimes the I.P changed from this.(The one Highlighted it wont be installed alreayd for you) <img width="1440" alt="Screen Shot 2023-11-01 at 5 20 36 PM" src="https://github.com/Danial-Dawood/Active-Directory-with-Azure-Virtual-Machines-/assets/149525309/94f878ca-920b-4fc1-8aa5-c5dc4133b49a">
 - Step 5 - From now on log on with the website name and the user name (websitename.com\username.)
 - Step 6 - Go to active directory users and computers( this can be typed into the search bar or in the server manger if you click tools in the top right.
-- Step 7 - Click the name of the website made and create two Orginization units _employees and _admins (employees has to be spelled correctly needed for powershell scipt.)
+- Step 7 - Click the name of the website made and create two Orginization units _employees and _admins (employees has to be spelled correctly needed for powershell scipt.) This is what they will look like after you refresh <img width="1440" alt="Screen Shot 2023-11-01 at 5 24 17 PM" src="https://github.com/Danial-Dawood/Active-Directory-with-Azure-Virtual-Machines-/assets/149525309/a1a45e88-60f4-4394-ac93-7f50229ce571">
+
 - Step 8 - Create a admin user (click admin/new/user)
 - Step 8.5 - Right click the name, click properties - then memeber of - add type in domain admin check the name, then click okay, apply and okay.
 - Step 9 - Log off and re sign in as your admin position.
