@@ -34,9 +34,8 @@ This tutorial outlines the implementation of on-premises Active Directory within
 - Step 9 - Log off and re sign in as your admin position.
 - Step 10 - Find out the Pritvate I.P Address for the the VM running the Windows Server
 - Step 11 - Now we need to change the DNS settings on the VM running Windows 10 on Azure, click on the Windows 10 VM, then Network 
-  Settings, then right under Network interface/ IP configuration - click on client-1241_z1 (primary)/ IPconfig (primary) <img width="1440" 
-  alt="Screen Shot 2023-10-31 at 9 43 48 PM" src="https://github.com/Danial-Dawood/Active-Directory-with-Azure-Virtual- 
-  Machines-/assets/149525309/f6d41fed-b760-48b6-9613-9ad3b7e9a5fd">
+  Settings, then right under Network interface/ IP configuration - click on client-1241_z1 (primary)/ IPconfig (primary) <img width="1440" alt="Screen Shot 2023-10-31 at 9 43 48 PM" src="https://github.com/Danial-Dawood/Active-Directory-with-Azure-Virtual-Machines-/assets/149525309/4534fbb5-544d-4773-b231-d0dd6e4370d2">
+
 - Step 11.5 - Once you click there it will allow you to click on DNS setting where under DNS Servers you can change it from inherit from vitural network to custom. Then type in the Windows Servers Private IP.
 - Step 12 - Go into the VM Running Windows 10, right click the start button at the bottom right, go to system and click on Rename this PC. Under the computer name tab the most bottom     option says to chnage this computer name or change it domain you will click on change.
 - Step 13 - Under Member of change it from work group to domain then enter the name of the website.
