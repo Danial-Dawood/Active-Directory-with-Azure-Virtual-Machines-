@@ -49,5 +49,5 @@ This tutorial outlines the implementation of on-premises Active Directory within
 - Step 19 - After Running the Script you can look into the Active Directory(My domain/_employees) and you will see all the random names being created.
 - Step 20 - Choose one and sign into the windows 10 VM with it( try locking it out and go into Active directory and unlock it )
 - Step 20.5 - Click the name of the user go to properties and it will show you the option to lock and unlock the account <img width="1440" alt="Screen Shot 2023-10-31 at 11 32 07 PM"     src="https://github.com/Danial-Dawood/Active-Directory-with-Azure-Virtual-Machines-/assets/149525309/4250cace-d524-4cd8-93a5-5f1d31392324">
-- Step 21 - When In active directory you can also change passwords and lock acccounts by right clicking on the name.
+-(Real world tip) - When In active directory you can also change passwords and lock acccounts by right clicking on the name.
 
