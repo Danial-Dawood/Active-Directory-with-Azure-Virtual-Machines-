@@ -44,8 +44,12 @@ This tutorial outlines the implementation of on-premises Active Directory within
   your credentials you dont have to make a account on every computer.)
 - Step 16 - Now we need to make it so that anyone not just a admin can log into the windows VM. Rigth click the start button, then go to system then go to remote decktop. At the bottom   under User accounts click (select users that can remotely access is PC)
 - Step 17 - Next click Add and and type in domain users and click check names it should unline it and caps the first letters of each word. Then click okay(x2) and this will maake it so   any domain user can log on to this computer (not just a admin)
-- Step 18 - Now go to the Windows Server VM, open up PowerShell as a Admin (so you much be logged into the windows server vm with the admin user we had created.) Open a new Script and put in https://github.com/joshmadakor1/AD_PS/blob/master/Generate-Names-Create-Users.ps1 this scprit for making users 
-- 
+- Step 18 - Now go to the Windows Server VM, open up PowerShell as a Admin (so you much be logged into the windows server vm with the admin user we had created.) Open a new Script and    put in https://github.com/joshmadakor1/AD_PS/blob/master/Generate-Names-Create-Users.ps1 this scprit for making users( changed number at the top of the script from 10000 to 100 so it   doesnt just make random accounts for 30 minutes)
+- Step 19 - After Running the Script you can look into the Active Directory(My domain/_employees) and you will see all the random names being created.
+- Step 20 - Choose one and sign into the windows 10 VM with it( try locking it out and go into Active directory and unlock it )
+- Step 20.5 - Click the name of the user go to properties and it will show you the option to lock and unlock the account <img width="1440" alt="Screen Shot 2023-10-31 at 11 32 07 PM"     src="https://github.com/Danial-Dawood/Active-Directory-with-Azure-Virtual-Machines-/assets/149525309/4250cace-d524-4cd8-93a5-5f1d31392324">
+- Step 21 - When In active directory you can also change passwords and lock acccounts by right clicking on the name.
+
 
 <h2>Deployment and Configuration Steps</h2>
 
