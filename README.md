@@ -18,7 +18,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 - Windows Server 2022
 - Windows 10 (21H2)
 
-<h2>High-Level Deployment and Configuration Steps</h2>
+<h2> Deployment and Configuration Steps</h2>
 
 - Step 1 - Create Two Vitural Machines making sure that they are both in the same V-Net, One will be running Windows Server the other Windows 10.
 - Step 1.5 - Set the VM that is running Windows server to have a static Private IP Address. 
